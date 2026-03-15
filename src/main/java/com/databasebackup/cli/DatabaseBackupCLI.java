@@ -1,8 +1,8 @@
 package com.databasebackup.cli;
 
-import picocli.commandline.Command;
-import picocli.commandline.CommandLine;
-import picocli.commandline.HelpCommand;
+import picocli.CommandLine;
+import picocli.CommandLine.Command;
+import picocli.CommandLine.HelpCommand;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
