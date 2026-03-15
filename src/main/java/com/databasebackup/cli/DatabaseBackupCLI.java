@@ -16,7 +16,7 @@ import org.slf4j.LoggerFactory;
     name = "db-backup",
     version = "Database Backup Utility 1.0.0",
     description = "A comprehensive CLI utility for backing up multiple database types with cloud storage support",
-    subcommands = {HelpCommand.class},
+    subcommands = {TestConnectionCommand.class, HelpCommand.class},
     mixinStandardHelpOptions = true,
     sortOptions = false
 )
