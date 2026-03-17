@@ -1,5 +1,6 @@
 package com.databasebackup.cli;
 
+import com.databasebackup.database.DatabaseProviderInitializer;
 import picocli.CommandLine;
 import picocli.CommandLine.Command;
 import picocli.CommandLine.HelpCommand;
@@ -38,6 +39,9 @@ public class DatabaseBackupCLI implements Runnable {
         logger.info("Starting Database Backup Utility");
         
         try {
+            // Initialize all database connection providers
+            DatabaseProviderInitializer.initializeProviders();
+            
             DatabaseBackupCLI cli = new DatabaseBackupCLI();
             CommandLine commandLine = new CommandLine(cli);
             
